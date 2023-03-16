@@ -44,6 +44,7 @@ a {
   padding: 40px 20px;
   text-align: center;
   min-height: 100vh;
+  max-height: 100vh;
   box-sizing: border-box;
 }
 
