@@ -1,0 +1,97 @@
+.tariffs {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tariffs__item-wrap {
+  position: relative;
+  width: 131px;
+  color: white;
+  opacity:0.5;
+  flex-basis: 131px;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+}
+
+.tariffs__item {
+  padding: 23px 11px 13px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 12px;
+  border: 1px solid #495795;
+  background-color: rgba(73, 87, 149, 0.1972);
+  clip-path: none;
+  text-align: center;
+}
+
+.tariffs__discount {
+  font-size: 10px;
+  font-weight: 700;
+  background-color: #DB0000;
+  display: none;
+  position: absolute;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  top: 1px;
+  right: 0px;
+  z-index: 2;
+  outline: 1px solid #495795;
+  outline-offset: 3px;
+  padding: 15px;
+  box-sizing: border-box;
+  clip-path: polygon(-40% 10%, 0% 130%, 90% 130%, 100% 30%, 70% -5% );
+}
+
+.tariffs__item--active {
+  transform: scale(1.1);
+  opacity:1;
+}
+
+.tariffs__item--active .tariffs__discount{
+  transform: scale(1.1);
+}
+
+.tariffs__item--discount .tariffs__discount  {
+  display: flex;
+} 
+.tariffs__item--discount .tariffs__item  {
+clip-path:  polygon(-5% 0%, -5% 100%, 105% 100%, 105% 18%,118px 35px,102px 30px,97px 15px ,105px 0%);
+}
+
+.tariffs__title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.tariffs__price {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tariffs__subprice {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 0.6;
+}
+
+.tariffs__special {
+  background-color: #495795;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 3px 0;
+  width: 137px;
+  white-space: nowrap;
+}
+
+.tariffs__bottom-price {
+  font-size: 12px;
+  margin-top: -2px;
+}

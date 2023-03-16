@@ -1,0 +1,14 @@
+.button {
+  background: linear-gradient(270deg, rgba(25, 135, 255, 1),rgba(25, 204, 255, 1));
+  color: white;
+  padding: 19px 104px;
+  border-radius: 2em;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  background-size: 100%;
+}
+
+.button:active {
+  background-size: 500%;
+}

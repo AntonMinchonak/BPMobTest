@@ -1,0 +1,11 @@
+.corp-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11px;
+}
+
+.corp-info__item {
+  text-decoration: underline;
+  color: #BDC0D0;
+}

@@ -1,0 +1,264 @@
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/global.css ***!
+  \*********************************************************************/
+@import url(https://v1.fontapi.ir/css/SFProDisplay);
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/global.css (1) ***!
+  \*************************************************************************/
+@import url(//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Text);
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/global.css (2) ***!
+  \*************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap);
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/global.css (3) ***!
+  \*************************************************************************/
+body {
+  margin: 0;
+  max-width: 500px;
+  background-color: rgb(17, 24, 37);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*!********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/offer.css ***!
+  \********************************************************************/
+
+.offer {
+  font-family: 'SF Pro Display', sans-serif;
+  color: white;
+  background-image: -webkit-image-set(
+    url(eee00c8f3ed67b4f816f.png) 1x,
+    url(a94694325dd887a6b861.png) 2x,
+    url(4b2d9495bf03acbcdaf4.png) 3x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.offer__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: 0 0 137px;
+  margin: 0 0 auto;
+  opacity: 0.6;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.offer__close {
+  color: white;
+   opacity: 0.4;
+}
+
+.offer__restore {
+  color: white;
+  opacity: 0.6;
+}
+
+.offer__title {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 23px 13px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.offer__title--condensed {
+  margin-bottom: auto;
+  line-height: 1.1;
+}
+
+.offer__features {
+  margin-bottom: 36px;
+}
+
+
+.offer__button {
+  margin-top: 8px;
+}
+
+.offer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 7px;
+}
+
+.offer__rewable {
+  font-size: 11px;
+  opacity: 0.5;
+  font-weight: 300;
+}
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/button.css ***!
+  \*********************************************************************/
+.button {
+  background: linear-gradient(270deg, rgba(25, 135, 255, 1),rgba(25, 204, 255, 1));
+  color: white;
+  padding: 19px 104px;
+  border-radius: 2em;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  background-size: 100%;
+}
+
+.button:active {
+  background-size: 500%;
+}
+/*!**********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/tariffs.css ***!
+  \**********************************************************************/
+.tariffs {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tariffs__item-wrap {
+  position: relative;
+  width: 131px;
+  color: white;
+  opacity:0.5;
+  flex-basis: 131px;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+}
+
+.tariffs__item {
+  padding: 23px 11px 13px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 12px;
+  border: 1px solid #495795;
+  background-color: rgba(73, 87, 149, 0.1972);
+  clip-path: none;
+  text-align: center;
+}
+
+.tariffs__discount {
+  font-size: 10px;
+  font-weight: 700;
+  background-color: #DB0000;
+  display: none;
+  position: absolute;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  top: 1px;
+  right: 0px;
+  z-index: 2;
+  outline: 1px solid #495795;
+  outline-offset: 3px;
+  padding: 15px;
+  box-sizing: border-box;
+  clip-path: polygon(-40% 10%, 0% 130%, 90% 130%, 100% 30%, 70% -5% );
+}
+
+.tariffs__item--active {
+  transform: scale(1.1);
+  opacity:1;
+}
+
+.tariffs__item--active .tariffs__discount{
+  transform: scale(1.1);
+}
+
+.tariffs__item--discount .tariffs__discount  {
+  display: flex;
+} 
+.tariffs__item--discount .tariffs__item  {
+clip-path:  polygon(-5% 0%, -5% 100%, 105% 100%, 105% 18%,118px 35px,102px 30px,97px 15px ,105px 0%);
+}
+
+.tariffs__title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.tariffs__price {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tariffs__subprice {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 0.6;
+}
+
+.tariffs__special {
+  background-color: #495795;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 3px 0;
+  width: 137px;
+  white-space: nowrap;
+}
+
+.tariffs__bottom-price {
+  font-size: 12px;
+  margin-top: -2px;
+}
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/corp-info.css ***!
+  \************************************************************************/
+.corp-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11px;
+}
+
+.corp-info__item {
+  text-decoration: underline;
+  color: #BDC0D0;
+}
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/features.css ***!
+  \***********************************************************************/
+.features {
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-content: flex-start;
+  text-align: left;
+  font-weight: 400;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.684495);
+}
+
+.features__item {
+  display: flex;
+  align-items: center;
+  gap: 5px
+}
+
+.features__img {
+  width: 22px;
+  height: 22px;
+}

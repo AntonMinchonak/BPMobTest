@@ -1,0 +1,79 @@
+
+.offer {
+  font-family: 'SF Pro Display', sans-serif;
+  color: white;
+  background-image: -webkit-image-set(
+    url("/Assets/background-full/4.png") 1x,
+    url("/Assets/background-full/4@2x.png") 2x,
+    url("/Assets/background-full/4@3x.png") 3x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.offer__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: 0 0 137px;
+  margin: 0 0 auto;
+  opacity: 0.6;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.offer__close {
+  color: white;
+   opacity: 0.4;
+}
+
+.offer__restore {
+  color: white;
+  opacity: 0.6;
+}
+
+.offer__title {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 23px 13px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.offer__title--condensed {
+  margin-bottom: auto;
+  line-height: 1.1;
+}
+
+.offer__features {
+  margin-bottom: 36px;
+}
+
+
+.offer__button {
+  margin-top: 8px;
+}
+
+.offer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 7px;
+}
+
+.offer__rewable {
+  font-size: 11px;
+  opacity: 0.5;
+  font-weight: 300;
+}
