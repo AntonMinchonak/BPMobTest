@@ -16,13 +16,16 @@ export default class Layout {
   static corpInfo = document.querySelectorAll(".corp-info__item");
 
   static {
-    window.onload = () => this.adaptiveStyle();
-    window.onresize = () => this.adaptiveStyle();
+    window.onload = () => {
+      this.adaptiveStyle();
+      window.onresize = () => this.adaptiveStyle();
+    }
   }
 
   static adaptiveStyle() {
     const windowHeight = window.innerHeight;
     const contentHeight = this.body.scrollHeight;
+   
     if (windowHeight < contentHeight) {
       this.content.style.marginBottom = "auto";
       this.titleWrap.classList.add('offer__title--condensed')

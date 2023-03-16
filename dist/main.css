@@ -32,9 +32,9 @@ a {
   font-family: 'SF Pro Display', sans-serif;
   color: white;
   background-image: -webkit-image-set(
-    url(eee00c8f3ed67b4f816f.png) 1x,
-    url(a94694325dd887a6b861.png) 2x,
-    url(4b2d9495bf03acbcdaf4.png) 3x);
+    url(/dist/eee00c8f3ed67b4f816f.png) 1x,
+    url(/dist/a94694325dd887a6b861.png) 2x,
+    url(/dist/4b2d9495bf03acbcdaf4.png) 3x);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
