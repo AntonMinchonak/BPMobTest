@@ -26,6 +26,7 @@
   background-color: rgba(73, 87, 149, 0.1972);
   clip-path: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .tariffs__discount {
