@@ -14,21 +14,22 @@ export default class Layout {
   static button = document.querySelector(".button");
   static rewable = document.querySelector(".offer__rewable");
   static corpInfo = document.querySelectorAll(".corp-info__item");
+  static translateFields = document.querySelectorAll(".translate");
 
   static {
     window.onload = () => {
       this.adaptiveStyle();
       window.onresize = () => this.adaptiveStyle();
-    }
+    };
   }
 
   static adaptiveStyle() {
     const windowHeight = window.innerHeight;
     const contentHeight = this.body.scrollHeight;
-   
+
     if (windowHeight < contentHeight) {
       this.content.style.marginBottom = "auto";
-      this.titleWrap.classList.add('offer__title--condensed')
+      this.titleWrap.classList.add("offer__title--condensed");
     } else {
       this.content.style.margin = "";
       this.titleWrap.classList.remove("offer__title--condensed");
